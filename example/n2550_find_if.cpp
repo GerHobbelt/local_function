@@ -32,7 +32,7 @@ int main(void) {
         return e.salary >= min_salary && e.salary < u_limit;
     } BOOST_LOCAL_FUNCTION_NAME(between)
     
-    // Pass local function to an STL algorithm as a template paramter (this
+    // Pass local function to an STL algorithm as a template parameter (this
     // cannot be done with plain member functions of local classes).
     std::vector<employee>::iterator i = std::find_if(
             employees.begin(), employees.end(), between);
